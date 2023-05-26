@@ -1,0 +1,99 @@
+@font-face {
+    font-family: title;
+    src: url(rubik.ttf);
+
+}
+
+
+h1 {
+    font-family: urbane-rounded;
+    font-weight: 600;
+    font-style: bolder;
+    color: #76d4a8;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin: 80px 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center
+}
+
+h2 {
+    font-family: urbane-rounded;
+    font-weight: bold;
+    color: #184501;
+    font-size: 1em;
+    padding-top: 0;
+    text-align: center
+}
+
+.button {
+    font-family: title;
+    margin: auto;
+    border: none;
+    color: #e7e8e7;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin: 60px 20px 20px;
+    text-align: center
+}
+
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    text-align: center
+}
+
+
+input {
+    font-family: urbane-rounded;
+    font-weight: bolder;
+    color: #21d43f;
+    font-size: 0.5em;
+    padding-top: 0;
+    text-align: center
+}
+
+/*定义动画*/
+@keyframes myfirst {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*使用动画：将动画绑定元素上*/
+.maxBox {
+    animation: myfirst 4s;
+    -moz-animation: myfirst 4s;
+    -webkit-animation: myfirst 4s;
+    -o-animation: myfirst 4s;
+}
+
+.text {
+    font-family: urbane-rounded;
+    font-size: 1.2em;
+    font-style: bolder;
+}
+
+h1 {
+    font-family: urbane-rounded;
+}
+
+.InputBox {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 35px;
+}

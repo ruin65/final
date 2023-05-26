@@ -1,0 +1,208 @@
+<html>
+
+<head>
+  <title>mental health quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+  <link rel="stylesheet" href="answer.css">
+</head>
+
+<body>
+  <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="bg.mp3">
+  </audio>
+
+
+  <img class="homepage" src="b1.png" width="450" height="550" />
+  <div class="c1"></div>
+  <div class="c2"></div>
+  <div class="c3"></div>
+  <div class="c4"></div>
+  <div class="c5"></div>
+  <div class="c6"></div>
+  <img class="note1" src="n.png" width="730" height="950" />
+  <img class="note2" src="n.png" width="730" height="950" />
+  <img class="jt" src="jt.png" width="50" height="30" />
+
+
+  <div id="quiz">
+    <div id="description">
+      <h1>YOUR RESULT</h1>
+      <h2>SCORE</h2>
+      <h3>MODERATE ANXIETY</h3>
+      <h4>You with moderate anxiety may experience more <br>frequent or intense anxiety symptoms that begin<br> to
+        interfere with your daily functioning. You may<br> have difficulty concentrating or completing tasks<br> due to
+        anxiety.</h4>
+      <h5>SUGGESTIONS</h5>
+      <h6>Cognitive-behavioral therapy (CBT): Consider seeking therapy from a<br> licensed mental health professional
+        who can help you identify and challenge <br>negative thought patterns and develop coping strategies.<br><br>
+
+        Stress reduction techniques: Practice stress management techniques<br> regularly, such as deep breathing
+        exercises, progressive muscle relaxation, or<br> mindfulness meditation.<br><br>
+
+        Regular exercise: Engaging in physical activity can help reduce anxiety <br>symptoms by increasing the
+        production of endorphins and improving overall<br> well-being.<br><br>
+
+        Limit caffeine and alcohol: Both caffeine and alcohol can exacerbate anxiety<br> symptoms, so it's advisable to
+        reduce or eliminate their consumption.<br><br>
+      </h6>
+    </div>
+  </div>
+
+  <ul id="answers"></ul>
+  <div style="clear: both"></div>
+  <button id="button" class="Rbutton" onclick="location.replace('index.html') ">RESTART</button>
+  <script>
+    const num = window.location.href.split('?num=')[1]
+    document.querySelector('h2').innerHTML = num + '/45'
+  </script>
+</body>
+
+
+<style>
+  body {
+    background-color: rgba(238, 234, 176, 255);
+  }
+
+
+  .homepage {
+    position: absolute;
+    left: 500px;
+    top: 160px;
+  }
+
+  .note1 {
+    position: absolute;
+    left: 350px;
+    top: 1160px;
+  }
+
+  .note2 {
+    position: absolute;
+    left: 350px;
+    top: 1860px;
+  }
+
+  .jt {
+    position: absolute;
+    left: 695px;
+    top: 730px;
+  }
+
+
+  .c1 {
+    height: 55vh;
+    width: 65vh;
+    background-image: url('./cloud1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 40vh;
+    left: 1vw;
+  }
+
+  .c2 {
+    height: 50vh;
+    width: 60vh;
+    background-image: url('./cloud1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: -35vh;
+    left: 80vw;
+  }
+
+  .c3 {
+    height: 45vh;
+    width: 55vh;
+    background-image: url('./cloud1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 18vh;
+    left: 65vw;
+  }
+
+  .c4 {
+    height: 45vh;
+    width: 55vh;
+    background-image: url('./cloud1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: -10vh;
+    left: 5vw;
+  }
+
+  .c5 {
+    height: 55vh;
+    width: 65vh;
+    background-image: url('./cloud2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 40vh;
+    left: -8vw;
+  }
+
+  .c6 {
+    height: 55vh;
+    width: 65vh;
+    background-image: url('./cloud2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 85vh;
+    left: 53vw;
+  }
+
+
+  h1 {
+    position: absolute;
+    left: 430px;
+    top: 10px;
+  }
+
+  h2 {
+    position: absolute;
+    left: 665px;
+    top: 1020px;
+    font-size: 24px;
+  }
+
+  h3 {
+    position: absolute;
+    left: 560px;
+    top: 1400px;
+  }
+
+  h4 {
+    position: absolute;
+    left: 445px;
+    top: 1500px;
+  }
+
+  h5 {
+    position: absolute;
+    left: 600px;
+    top: 2080px;
+  }
+
+  h6 {
+    position: absolute;
+    left: 440px;
+    top: 2180px;
+  }
+
+
+  button {
+    position: absolute;
+    left: 630px;
+    top: 2600px;
+  }
+
+  .Rbutton {
+    position: absolute;
+    left: 570px;
+    top: 2600px;
+  }
+</style>

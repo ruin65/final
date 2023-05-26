@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>mental health quiz</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<link rel="stylesheet" href="answer.css">
+</head>
+<body>
+<audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+src="bg.mp3">
+</audio>
+
+
+<img class="homepage" src="c1.png" width="450" height="550"/>
+<div class="c1"></div>
+<div class="c2"></div>
+<div class="c3"></div>
+<div class="c4"></div>
+<div class="c5"></div>
+<div class="c6"></div>
+<img class="note1" src="n.png" width="730" height="950"/>
+<img class="note2" src="n.png" width="730" height="950"/>
+<img class="jt" src="jt.png" width="50" height="30" />
+
+
+<div id="quiz">
+<div id="description">
+<h1>YOUR RESULT</h1>
+<h2>SCORE</h2>
+<h3>SEVERE ANXIETY</h3>
+<h4>You with severe anxiety may experience constant<br> and overwhelming anxiety symptoms that <br>significantly impact your daily lives. You may<br> struggle with sleep disturbances, panic attacks,<br> and avoidance behaviors..</h4>
+<h5>SUGGESTIONS</h5>
+<h6>Seek professional help: Consult with a mental health professional who can<br>  assess your condition and recommend appropriate treatments, such as<br>  therapy, medication, or a combination of both.<br> <br> 
+
+    Medication: In some cases, doctors may prescribe anti-anxiety medications<br>  or antidepressants to help manage severe anxiety symptoms. It's important <br> to follow your healthcare provider's guidance and closely monitor any<br>  potential side effects.<br> <br> 
+
+    Therapy: Consider therapy options like cognitive-behavioral therapy (CBT),<br>  exposure therapy, or dialectical behavior therapy (DBT) to address underlying<br>  causes of anxiety and develop coping strategies.<br> <br> 
+
+    Self-care and support: Prioritize self-care activities that promote relaxation <br> and emotional well-being, such as practicing mindfulness, engaging in <br> hobbies, or connecting with supportive friends and family.<br> <br> 
+</h6>
+
+</div>
+</div>
+
+<ul id="answers"></ul>
+<div style="clear: both"></div>
+<button id="button" class="Rbutton" onclick="location.replace('index.html') ">RESTART</button>
+<script>
+  const num = window.location.href.split('?num=')[1]
+  document.querySelector('h2').innerHTML = num + '/45'
+</script>
+</body>
+
+
+<style>
+body{
+    background-color:rgba(239,195,194,255);  
+}
+
+
+.homepage{     
+  position:absolute;  
+  left:500px;
+  top:160px;
+}
+
+.note1{     
+  position:absolute;  
+  left:350px;
+  top:1160px;
+}
+
+.note2{     
+  position:absolute;  
+  left:350px;
+  top:1860px;
+}
+
+.jt {
+    position: absolute;
+    left: 695px;
+    top: 730px;
+  }
+  
+
+
+.c1 {
+    height: 55vh;
+    width: 65vh;
+    background-image: url('./cloud1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 40vh;
+    left: 1vw;
+}
+
+.c2 {
+    height: 50vh;
+    width: 60vh;
+    background-image: url('./cloud1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: -35vh;
+    left: 80vw;
+}
+
+.c3 {
+    height: 45vh;
+    width: 55vh;
+    background-image: url('./cloud1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 18vh;
+    left: 65vw;
+}
+
+.c4 {
+    height: 45vh;
+    width: 55vh;
+    background-image: url('./cloud1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: -10vh;
+    left: 5vw;
+}
+
+.c5 {
+    height: 55vh;
+    width: 65vh;
+    background-image: url('./cloud2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 40vh;
+    left: -8vw;
+}
+
+.c6 {
+    height: 55vh;
+    width: 65vh;
+    background-image: url('./cloud2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 85vh;
+    left: 53vw;
+}
+
+
+h1{     
+  position:absolute;   
+  left:430px;
+  top:10px;
+}
+
+h2{     
+  position:absolute;   
+  left:665px;
+  top:1020px; 
+  font-size: 24px;
+}
+
+h3{     
+  position:absolute;   
+  left:575px;
+  top:1400px;
+}
+
+h4{     
+  position:absolute;   
+  left:445px;
+  top:1500px;
+}
+
+h5{     
+  position:absolute;   
+  left:600px;
+  top:2070px;
+}
+
+h6{     
+  position:absolute;   
+  left:440px;
+  top:2160px;
+}
+
+
+button{     
+  position:absolute;   
+  left:630px;
+  top:2600px;
+}
+
+
+button{     
+  position:absolute;   
+  left:630px;
+  top:2600px;
+}
+
+.Rbutton {
+    position:absolute;   
+  left:570px;
+  top:2600px;
+}
+
+
+</style>

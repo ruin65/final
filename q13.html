@@ -1,0 +1,105 @@
+<html>
+
+<head>
+  <title>mental health quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+  <link rel="stylesheet" href="question.css">
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="maxBox">
+    <div class="main">
+
+      <h1> Do you often have trouble breathing?</a></h1><br>
+      <h2> 13/15</h2>
+      <div class="InputBox">
+        <div class="item">
+          <input type="radio" value="0" name="q1" id="correct1">
+          <span class="text">
+            Little or no time
+          </span>
+        </div>
+        <div class="item">
+          <input type="radio" value="1" name="q1">
+          <span class="text">
+            Part of the time
+          </span>
+        </div>
+        <div class="item">
+          <input type="radio" value="2" name="q1">
+          <span class="text">
+            Quite a lot
+          </span>
+        </div>
+        <div class="item">
+          <input type="radio" value="3" name="q1">
+          <span class="text">
+            Most or all of the time
+          </span>
+        </div>
+      </div>
+
+      <ul id="answers"></ul>
+      <div style="clear: both"></div>
+    </div>
+    <div class="bottom">
+      <button id="button" class="button" onclick="handleClick()">CONTINUE</button>
+      <div class="jdt">
+        <img src="jdt.png" class="imgJdt" width="115" height="140" />
+      </div>
+    </div>
+  </div>
+  <script>
+    const input = document.getElementsByTagName('input')
+    const handleClick = () => {
+      handleSubmit(input, 'q14')
+    }
+  </script>
+</body>
+
+<style>
+  .maxBox {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main {
+    height: 55vh;
+  }
+
+  .bottom {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    background-color: rgba(44, 127, 109, 0.8);
+  }
+
+  img {
+    margin-left: 0;
+    top: 640px;
+    z-index: 2;
+  }
+
+
+  .jdt {
+    height: 6vh;
+    width: 60vh;
+    background-image: url('./j13.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+  }
+
+  .imgJdt {
+    position: absolute;
+    top: -35px;
+    left: 345px;
+  }
+</style>
